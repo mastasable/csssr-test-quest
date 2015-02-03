@@ -1,0 +1,21 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "authors": [
+    "A. Sobol masta.sable@gmail.com"
+  ],
+  "description": "A basic template for quickstart html app",
+  "license": "MIT",
+  "homepage": "https://github.com/xsobolx/template.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "jquery": "1.9"
+  }
+}
