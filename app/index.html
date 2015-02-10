@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>my app</title>
+	<title>Анкета</title>
 	<!-- build:css css/vendor.css -->
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
@@ -13,9 +13,102 @@
 	<!-- endbuild -->
 </head>
 <body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner center">
+				<div class="header__logo left">
+					<a href="" class="logo__link"></a>
+					<span class="logo__descr">Секретный архив учпеждения</span>
+				</div>
+				<img class="header__top-secret right" src="images/top-secret.png"></img>
+			</div>
+		</header>
+		<div class="main container center">
+			<div class="main__header center">
+				<img src = "images/delo.png">
+			</div>
+			<section class="main__about center">
+				<ul class="about__list">
+					<li class="about__item">
+						<span class="quest left">Полное ФИО</span>
+						<span class="answer ">Соболь Александр</span>
+					</li>
+					<li class="about__item">
+						<span class="quest left">Год рождения</span>
+						<span class="answer ">1990</span>
+					</li>
+					<li class="about__item">
+						<span class="quest left">Место жительства</span>
+						<span class="answer ">г. Можайск</span>
+					</li>
+					<li class="about__item">
+						<span class="quest left">Скайп</span>
+						<span class="answer "><a href="callto:masta.sable">masta.sable</a></span>
+					</li>
+					<li class="about__item">
+						<span class="quest left">Почта</span>
+						<span class="answer "><a href="mailto:masta.sable@gmail.com">masta.sable@gmail.com</a></span>
+					</li>
+				</ul>
+				<div class="main__htmlacademy">
+					<span class="quest left">Выпусник 
+						<a href="http://htmlacadeny.ru" class="htmlacademy">htmlacademy.ru</a>
+					</span>
+					<span class="yes">Да</span>
+					<span class="no">Нет</span>
+				</div>
+				<div class="main__skills">
+					<h2>Практические навыки</h2>
+					<p><small>Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутствие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</small></p>
+					<div class="skills__row clearfix">
+						<ul class="skills__list">
+							<li class="skills__item checked">Методология БЭМ</li>
+							<li class="skills__item checked">jQuery</li>
+							<li class="skills__item checked">Использую GULP</li>
+							<li class="skills__item">HAML</li>
+							<li class="skills__item checked">Sass</li>
+							<li class="skills__item">Less</li>
+							<li class="skills__item">CoffeeScript</li>
+						</ul>
+						<ul class="skills__list">
+							<li class="skills__item checked">Jade</li>
+							<li class="skills__item">Stylus</li>
+							<li class="skills__item">Знаю(изучаю) Angular</li>
+							<li class="skills__item">Верстка под Android</li>
+							<li class="skills__item">Верстка под iOs</li>
+							<li class="skills__item">Верстка под Windows Phone</li>
+						</ul>
+						<ul class="skills__list">
+							<li class="skills__item">Верстка рассылок</li>
+							<li class="skills__item checked">Адаптивная верстка</li>
+							<li class="skills__item checked">Использую DropBox</li>
+							<li class="skills__item checked">Использую Gmail</li>
+							<li class="skills__item checked">Использую GitHub</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="main__skill-slider">
+					<h2>Уровень владения JavaScript</h2>
+					<div class="skill-slider"></div>
+					<div id="skill-slider__result"></div>
+					<input type="hidden" id="hidden">
+					<ul class="skill-slider__list">
+						<li class="skill-slider__item item--utmost left">Не владею</li>
+						<li class="skill-slider__item item--center">Использую готовые решения</li>
+						<li class="skill-slider__item item--center">Использую готовые решения и умею их переделывать</li>
+						<li class="skill-slider__item item--umost right">Пишу сложные скрипты</li>
+					</ul>
+				</div>
+			</section>
+			<span class="quest date left">Дата заполнения</span>
+			<span class="answer ">10.02.2015</span>
+		</div>
+	</div>
 	<!-- build:js scripts/vendor.js -->
 	<!-- bower:js -->
 	<script src="bower_components/jquery/jquery.js"></script>
+	<script src="bower_components/jqueryui/jquery-ui.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:js scripts/main.js -->
