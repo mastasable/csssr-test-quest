@@ -146,6 +146,7 @@ li {
   font-weight: 900; }
 
 .skills__item {
+  position: relative;
   height: 35px;
   line-height: 20px; }
 
@@ -214,4 +215,5 @@ li {
   background: url('../images/pos-slider.png') left top no-repeat; }
 
 .checked:before {
+  top: -9px;
   background: transparent url('../images/checked.png') left top no-repeat; }

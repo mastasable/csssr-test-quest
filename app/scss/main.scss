@@ -180,6 +180,7 @@ li{
 }
 
 .skills__item{
+	position: relative;
 	height: 35px;
 	line-height: 20px;
 }
@@ -262,6 +263,7 @@ li{
 }
 
 .checked:before{
+	top: -9px;
 	background: transparent url('../images/checked.png') left top no-repeat;
 }
 
